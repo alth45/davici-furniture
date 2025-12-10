@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+I'll help you create a professional README.md for your DaVinci Furniture project. Let me first analyze the project structure to understand its components better.
 
-## Getting Started
+Let me take a look at the package.json to understand the project's dependencies and scripts.
 
-First, run the development server:
+I'll create a comprehensive README.md for your DaVinci Furniture project. Here's the proposed content:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+I've prepared a comprehensive README.md for your DaVinci Furniture project. Here's the content you can use:
+
+````markdown
+# DaVinci Furniture
+
+A modern e-commerce platform for high-quality furniture, built with Next.js and React.
+
+## 🚀 Features
+
+- **Product Catalog**: Browse through a wide range of furniture items
+- **Product Details**: View detailed information, images, and specifications
+- **Wishlist**: Save your favorite items for later
+- **Shopping Cart**: Add items to cart and proceed to checkout
+- **User Authentication**: Secure login and registration system
+- **Responsive Design**: Fully responsive layout for all devices
+- **Quick View**: Preview products without leaving the page
+- **Product Reviews**: Read and submit product reviews
+
+## 🛠️ Technologies Used
+
+- **Frontend**: Next.js 16, React 19, TypeScript
+- **Styling**: Tailwind CSS
+- **State Management**: React Context API
+- **Icons**: Custom SVG Icons
+- **Build Tool**: Vite
+- **Package Manager**: npm
+
+## 📦 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/davici-furniture.git
+   cd davici-furniture
+   ```
+````
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+## 🏗️ Project Structure
+
+```
+/app
+  /components      # Reusable UI components
+  /context         # React context providers
+  /data            # Mock data and types
+  /product         # Product pages
+  /shop            # Shop page
+  /wishlist        # Wishlist page
+  /contact         # Contact page
+  /login           # Login page
+  /register        # Registration page
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a `.env.local` file in the root directory and add the following variables:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+NEXT_PUBLIC_API_URL=your_api_url_here
+# Add other environment variables as needed
+```
 
-## Learn More
+## 📝 Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` - Start the development server
+- `npm run build` - Build the application for production
+- `npm start` - Start the production server
+- `npm run lint` - Run ESLint for code quality
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contributions are welcome! Please follow these steps:
 
-## Deploy on Vercel
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [React Documentation](https://react.dev/)
+
+---
+
+Made with ❤️ by Your Name
+
+```
+
+To use this README:
+
+1. Create a new file named `README.md` in your project root
+2. Copy and paste the content above
+3. Customize the following sections as needed:
+   - Replace `yourusername` in the clone URL with your GitHub username
+   - Update the "Made with ❤️ by Your Name" at the bottom
+   - Add any additional features or technologies specific to your implementation
+   - Add a banner image by replacing the placeholder URL
+
+Would you like me to help you with any specific section or make any adjustments to the README?
+```
