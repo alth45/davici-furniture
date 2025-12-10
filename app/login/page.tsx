@@ -5,12 +5,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar'; // Opsional: Kalau mau tanpa Navbar, hapus baris ini
 import { useAuth } from '@/context/AuthContext'; // <--- Import
-import { Metadata } from 'next';
+// import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Login',
-  description: '',
-};
+// export const metadata: Metadata = {
+//   title: 'Login',
+//   description: '',
+// };
 
 export default function LoginPage() {
     const { login } = useAuth(); // <--- Ambil fungsi login

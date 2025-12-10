@@ -2,12 +2,12 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
-import { Metadata } from 'next';
+// import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Register page',
-  description: '',
-};
+// export const metadata: Metadata = {
+//   title: 'Register page',
+//   description: '',
+// };
 
 export default function RegisterPage() {
   return (
