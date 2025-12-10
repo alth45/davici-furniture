@@ -1,26 +1,121 @@
 @import "tailwindcss";
 
+
+/* Utility untuk hide scrollbar tapi tetap bisa di-scroll
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */
+
+/* 2. Definisi Variabel Global */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary: #FF8C4B;
+  /* Warna Orange Davici */
+  --color-dark: #333333;
+  /* Warna Hitam Davici */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* 3. Apply Font ke Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-dark);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* 4. Custom Utility Classes (Pengganti Config Tailwind tadi) */
+/* Pakai @layer utilities biar bisa di-override kalau perlu */
+@layer utilities {
+
+  /* Text Colors */
+  .text-primary {
+    color: var(--color-primary);
+  }
+
+  .text-dark {
+    color: var(--color-dark);
+  }
+
+  /* Background Colors */
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+
+  .bg-dark {
+    background-color: var(--color-dark);
+  }
+
+  /* Border Colors */
+  .border-primary {
+    border-color: var(--color-primary);
+  }
+
+  /* Hover Effects (Manual) - Opsional */
+  .hover\:text-primary:hover {
+    color: var(--color-primary);
+  }
+
+  .hover\:bg-primary:hover {
+    background-color: var(--color-primary);
+  }
+
+  /* Custom Scrollbar Hide (Yang dari awal sudah ada) */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.3s ease-out forwards;
+}
+
+@layer utilities {
+  .animate-bounce-slow {
+    animation: bounce-slow 3s infinite;
+  }
+}
+
+@keyframes bounce-slow {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
