@@ -4,6 +4,7 @@ import React, { createContext, useContext, useState, ReactNode } from 'react';
 import toast from 'react-hot-toast';
 
 type Product = {
+  reviews?: number;
   id: number;
   name: string;
   price: string;
